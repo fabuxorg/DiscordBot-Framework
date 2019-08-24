@@ -34,7 +34,7 @@ public class Main {
 
     }
 
-    private static OnlineStatus handleOnlineStatus() {
+    public static OnlineStatus handleOnlineStatus() {
         if(ConfigReader.read("data", "config", "online_status").equalsIgnoreCase("Online")){
             return OnlineStatus.ONLINE;
         }else if(ConfigReader.read("data", "config", "online_status").equalsIgnoreCase("Offline")){
