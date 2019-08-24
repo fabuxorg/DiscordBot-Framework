@@ -1,5 +1,7 @@
 #Discord specific
 discord_token=
+online_status=DO_NOT_DISTURB
+# possible status: Online, DO_NOT_DISTURB, Offline
 #
 #SQL configuration
 database_name=

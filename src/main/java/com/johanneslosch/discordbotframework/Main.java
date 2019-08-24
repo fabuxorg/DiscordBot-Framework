@@ -1,5 +1,6 @@
 package com.johanneslosch.discordbotframework;
 
+import com.johanneslosch.discordbotframework.datahandler.filehandler.config.ConfigReader;
 import net.dv8tion.jda.api.AccountType;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
@@ -14,11 +15,12 @@ public class Main {
 
         builder = new JDABuilder(AccountType.BOT);
 
-        builder.setToken("");
+        builder.setToken(ConfigReader.read("data", "config", "discord_token"));
         builder.setAutoReconnect(true);
 
-        builder.setStatus(OnlineStatus.DO_NOT_DISTURB);
 
+
+        builder.setStatus(handleOnlineStatus());
 
         addListeners();
         addCommands();
@@ -29,6 +31,19 @@ public class Main {
             e.printStackTrace();
         }
 
+    }
+
+    private static OnlineStatus handleOnlineStatus() {
+        if(ConfigReader.read("data", "config", "online_status").equalsIgnoreCase("Online")){
+            return OnlineStatus.ONLINE;
+        }else if(ConfigReader.read("data", "config", "online_status").equalsIgnoreCase("Offline")){
+            return OnlineStatus.OFFLINE;
+        }else if(ConfigReader.read("data", "config", "online_status").equalsIgnoreCase("DO_NOT_DISTURB")){
+            return OnlineStatus.DO_NOT_DISTURB;
+        }else{
+            System.out.println("SET ONLINE STATUS IN CONFIG!");
+            return OnlineStatus.IDLE;
+        }
     }
 
     public static void addCommands() {
