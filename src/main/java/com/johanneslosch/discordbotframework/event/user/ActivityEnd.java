@@ -6,5 +6,4 @@ import javax.annotation.Nonnull;
 
 public class ActivityEnd {
     public void onUserActivityEnd(@Nonnull UserActivityEndEvent event) {}
-
 }
