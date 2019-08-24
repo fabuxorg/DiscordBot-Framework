@@ -1,0 +1,11 @@
+#Discord specific
+discord_token=
+#
+#SQL configuration
+database_name=
+database_user=
+database_password=
+database_host=
+#
+#MongoDB configuration
+mongodb_url=
