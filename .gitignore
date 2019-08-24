@@ -34,3 +34,5 @@ settings.gradle
 gradle/wrapper/
 
 .idea/
+
+data/config.prop
