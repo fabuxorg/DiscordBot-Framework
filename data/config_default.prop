@@ -1,0 +1,13 @@
+#Discord specific
+discord_token=
+online_status=DO_NOT_DISTURB
+# possible status: Online, DO_NOT_DISTURB, Offline
+#
+#SQL configuration
+database_name=
+database_user=
+database_password=
+database_host=
+#
+#MongoDB configuration
+mongodb_url=
