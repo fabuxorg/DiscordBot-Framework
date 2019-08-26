@@ -2,7 +2,10 @@ package com.johanneslosch.discordbotframework.datahandler.database.sql;
 
 import com.johanneslosch.discordbotframework.datahandler.filehandler.config.ConfigReader;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 
 public class SQLHandler {

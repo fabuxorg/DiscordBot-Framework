@@ -1,6 +1,9 @@
 package com.johanneslosch.discordbotframework.datahandler.filehandler.config;
 
-import java.io.*;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
 import java.util.Properties;
 
 public class ConfigWriter {
