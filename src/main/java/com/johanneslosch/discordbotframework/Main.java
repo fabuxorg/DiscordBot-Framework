@@ -1,6 +1,7 @@
 package com.johanneslosch.discordbotframework;
 
 import com.johanneslosch.discordbotframework.datahandler.filehandler.config.ConfigReader;
+import com.johanneslosch.discordbotframework.util.logs.Logger;
 import com.johanneslosch.discordbotframework.util.versionhandler.VersionHandler;
 import net.dv8tion.jda.api.AccountType;
 import net.dv8tion.jda.api.JDA;
@@ -27,6 +28,7 @@ public class Main {
         try {
             JDA jda = builder.build();
         } catch (LoginException e) {
+            Logger.logger(e.getMessage());
             e.printStackTrace();
         }
 

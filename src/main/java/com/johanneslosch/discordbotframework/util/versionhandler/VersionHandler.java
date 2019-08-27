@@ -1,6 +1,7 @@
 package com.johanneslosch.discordbotframework.util.versionhandler;
 
 
+import com.johanneslosch.discordbotframework.util.logs.Logger;
 import org.jetbrains.annotations.NotNull;
 import org.kohsuke.github.GitHub;
 
@@ -33,12 +34,14 @@ public class VersionHandler {
         try {
             gitHub = GitHub.connect();
         } catch (IOException e) {
+            Logger.logger(e.getMessage());
             e.printStackTrace();
         }
         try {
             assert gitHub != null;
             return gitHub.getUser(GIT_USER).getRepository(GIT_REPO).getLatestRelease().getTagName();
         } catch (IOException e) {
+            Logger.logger(e.getMessage());
             e.printStackTrace();
         }
         return null;
@@ -51,12 +54,14 @@ public class VersionHandler {
         try {
             gitHub = GitHub.connect();
         } catch (IOException e) {
+            Logger.logger(e.getMessage());
             e.printStackTrace();
         }
         try {
             assert gitHub != null;
             return gitHub.getUser(GIT_USER).getRepository(GIT_REPO).getLatestRelease().getUrl();
         } catch (IOException e) {
+            Logger.logger(e.getMessage());
             e.printStackTrace();
         }
         return null;
@@ -75,12 +80,14 @@ public class VersionHandler {
             prop.load(input);
             // get the property value and print it out
         } catch (IOException ex) {
+            Logger.logger(ex.getMessage());
             ex.printStackTrace();
         } finally {
             if (input != null) {
                 try {
                     input.close();
                 } catch (IOException e) {
+                    Logger.logger(e.getMessage());
                     e.printStackTrace();
                 }
             }

@@ -1,5 +1,6 @@
 package com.johanneslosch.discordbotframework.datahandler.filehandler;
 
+import com.johanneslosch.discordbotframework.util.logs.Logger;
 import org.jetbrains.annotations.Nullable;
 
 import java.io.*;
@@ -33,6 +34,7 @@ public class ReadFile {
         {
             System.out.println(e.getMessage());
         } catch (IOException e) {
+            Logger.logger(e.getMessage());
             e.printStackTrace();
         }
         return null;

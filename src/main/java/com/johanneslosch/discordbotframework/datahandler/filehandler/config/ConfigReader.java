@@ -1,5 +1,7 @@
 package com.johanneslosch.discordbotframework.datahandler.filehandler.config;
 
+import com.johanneslosch.discordbotframework.util.logs.Logger;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -29,12 +31,14 @@ public class ConfigReader {
                 prop.getProperty(key);
 
             } catch (IOException ex) {
+                Logger.logger(ex.getMessage());
                 ex.printStackTrace();
             } finally {
                 if (input != null) {
                     try {
                         input.close();
                     } catch (IOException e) {
+                        Logger.logger(e.getMessage());
                         e.printStackTrace();
                     }
                 }
