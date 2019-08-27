@@ -1,0 +1,52 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'com.johanneslosch'
+version '0.1'
+
+sourceCompatibility = 11
+
+mainClassName = "Main"
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile 'net.dv8tion:JDA:4.0.0_39'
+    compile group: 'org.mongodb', name: 'mongodb-driver', version: '3.11.0'
+    // https://mvnrepository.com/artifact/org.kohsuke/github-api
+    compile group: 'org.kohsuke', name: 'github-api', version: '1.95'
+
+}
+test {
+    useJUnitPlatform()
+}
+
+task createProperties(dependsOn: processResources) {
+    doLast {
+       // def prop = new Properties()
+       // def propFile = new File("$buildDir/resources/main/version.properties");
+       // propFile.createNewFile();
+       // propFile.withWriter { w ->
+        //    prop
+        //    prop['version'] = project.version.toString()
+        //    prop.store w, null
+        //}
+        File file = new File(projectDir,"/src/main/resources/version.txt")
+        file.text = "version:" + project.version.toString()
+
+        //prop.store(propFile, "version: project.version.toString()")
+    }
+}
+
+classes {
+    dependsOn createProperties
+}
+
+
+
+
