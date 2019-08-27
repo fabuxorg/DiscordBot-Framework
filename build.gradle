@@ -28,18 +28,8 @@ test {
 
 task createProperties(dependsOn: processResources) {
     doLast {
-       // def prop = new Properties()
-       // def propFile = new File("$buildDir/resources/main/version.properties");
-       // propFile.createNewFile();
-       // propFile.withWriter { w ->
-        //    prop
-        //    prop['version'] = project.version.toString()
-        //    prop.store w, null
-        //}
         File file = new File(projectDir,"/src/main/resources/version.txt")
         file.text = "version:" + project.version.toString()
-
-        //prop.store(propFile, "version: project.version.toString()")
     }
 }
 
