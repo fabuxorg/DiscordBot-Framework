@@ -1,5 +1,7 @@
 package com.johanneslosch.discordbotframework.datahandler.filehandler.config;
 
+import com.johanneslosch.discordbotframework.util.logs.Logger;
+
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -30,6 +32,7 @@ public class ConfigWriter {
             try {
                 outputStream = new FileOutputStream(path +"/"+ filename + ".prop", true);
             } catch (FileNotFoundException e) {
+                Logger.logger(e.getMessage());
                 e.printStackTrace();
             }
 
@@ -46,6 +49,7 @@ public class ConfigWriter {
             try {
                 properties.store(outputStream, null);
             } catch (IOException e1) {
+                Logger.logger(e1.getMessage());
                 e1.printStackTrace();
             }
         }
