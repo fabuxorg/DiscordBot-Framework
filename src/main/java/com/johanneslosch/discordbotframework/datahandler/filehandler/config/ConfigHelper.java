@@ -1,5 +1,7 @@
 package com.johanneslosch.discordbotframework.datahandler.filehandler.config;
 
+import com.johanneslosch.discordbotframework.util.logs.Logger;
+
 import java.io.File;
 import java.io.IOException;
 
@@ -16,6 +18,7 @@ class ConfigHelper {
             try {
                 f.createNewFile();
             } catch (IOException e) {
+                Logger.logger(e.getMessage());
                 System.err.println("Error creating " + f.toString());
             }
             return f.isFile() && f.canWrite() && f.canRead();
@@ -40,6 +43,7 @@ class ConfigHelper {
                 result = true;
             }
             catch(SecurityException se){
+                Logger.logger(se.getMessage());
                 System.err.println(se);
             }
             if(result) {

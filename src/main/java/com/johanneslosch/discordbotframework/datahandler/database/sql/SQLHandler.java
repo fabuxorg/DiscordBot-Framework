@@ -1,6 +1,7 @@
 package com.johanneslosch.discordbotframework.datahandler.database.sql;
 
 import com.johanneslosch.discordbotframework.datahandler.filehandler.config.ConfigReader;
+import com.johanneslosch.discordbotframework.util.logs.Logger;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -29,6 +30,7 @@ public class SQLHandler {
                 connection = DriverManager.getConnection(DATABASE_URL, USER, PASSWORD);
                 System.out.println("Database connected!");
             } catch (SQLException e) {
+                Logger.logger(e.getMessage());
                 e.printStackTrace();
             }
         }

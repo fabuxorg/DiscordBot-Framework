@@ -27,8 +27,6 @@ hs_err_pid*
 .idea/gradle.xml
 .idea/misc.xml
 .idea/vcs.xml
-build.gradle
-settings.gradle
 
 
 gradle/wrapper/
