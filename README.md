@@ -44,10 +44,10 @@ You can use NOSQL with
 <a href="#mongodb">mongodb</a> and <a href="#sql">SQL</a>.
 
 #### mongodb
-To use Mongodb you have to use the MongoDBHandler.
+To use Mongodb you have to use the `MongoDBHandler`.
 
 #### sql
-To use SQL you have to use the SQLHandler.
+To use SQL you have to use the `SQLHandler`.
 
 ### files
 You have two main components of files witch this framework is supporting right now to 100 %. <br>
@@ -60,10 +60,13 @@ To write a properties file you should use this method.
 Properties files are like `filename.prop` the ending .prop is already defined. 
 
 ##### How to write something to a properties file?
+
 ````
 ConfigWriter.writePropertiesFile("path", "filename", "key-to-safe", "value-for-key");
 ````
+
 ##### How to read something from a properties file?
+
 ````
 String config = ConfigReader.read("path", "filename", "key-to-safe");
 ````
