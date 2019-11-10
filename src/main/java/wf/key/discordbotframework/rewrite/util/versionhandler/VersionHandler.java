@@ -1,4 +1,4 @@
-package com.johanneslosch.discordbotframework.util.versionhandler;
+package wf.key.discordbotframework.rewrite.util.versionhandler;
 
 
 import com.johanneslosch.discordbotframework.util.logs.Logger;
