@@ -1,4 +1,4 @@
-package com.johanneslosch.discordbotframework.event.core;
+package wf.key.discordbotframework.rewrite.event.core;
 
 import net.dv8tion.jda.api.events.ReconnectedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
