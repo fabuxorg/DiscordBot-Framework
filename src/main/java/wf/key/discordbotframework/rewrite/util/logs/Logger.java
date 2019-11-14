@@ -1,4 +1,4 @@
-package com.johanneslosch.discordbotframework.util.logs;
+package wf.key.discordbotframework.rewrite.util.logs;
 
 import com.johanneslosch.discordbotframework.datahandler.filehandler.WriteFile;
 
