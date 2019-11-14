@@ -1,4 +1,4 @@
-package com.johanneslosch.discordbotframework.datahandler.database.mongodb;
+package wf.key.discordbotframework.rewrite.datahandler.database.mongodb;
 
 
 /* EXAMPLE DOCUMENT
@@ -11,7 +11,7 @@ Document person = new Document()
                 .append("books", "BookName");
  */
 
-import com.johanneslosch.discordbotframework.datahandler.filehandler.config.ConfigReader;
+import wf.key.discordbotframework.rewrite.datahandler.filehandler.config.ConfigReader;
 import com.mongodb.BasicDBObject;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;

@@ -1,6 +1,6 @@
 package wf.key.discordbotframework.rewrite.util.initBot;
 
-import com.johanneslosch.discordbotframework.datahandler.filehandler.config.ConfigReader;
+import wf.key.discordbotframework.rewrite.datahandler.filehandler.config.ConfigReader;
 import net.dv8tion.jda.api.OnlineStatus;
 
 class HandleOnlineStatus {

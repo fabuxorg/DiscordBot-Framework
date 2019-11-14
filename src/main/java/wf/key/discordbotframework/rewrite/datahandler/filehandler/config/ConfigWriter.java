@@ -1,6 +1,6 @@
-package com.johanneslosch.discordbotframework.datahandler.filehandler.config;
+package wf.key.discordbotframework.rewrite.datahandler.filehandler.config;
 
-import com.johanneslosch.discordbotframework.util.logs.Logger;
+import wf.key.discordbotframework.rewrite.util.logs.Logger;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;

@@ -1,7 +1,7 @@
-package com.johanneslosch.discordbotframework.datahandler.database.sql;
+package wf.key.discordbotframework.rewrite.datahandler.database.sql;
 
-import com.johanneslosch.discordbotframework.datahandler.filehandler.config.ConfigReader;
-import com.johanneslosch.discordbotframework.util.logs.Logger;
+import wf.key.discordbotframework.rewrite.datahandler.filehandler.config.ConfigReader;
+import wf.key.discordbotframework.rewrite.util.logs.Logger;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
