@@ -20,6 +20,11 @@ BADGES!!!
 [MongoDB](https://www.mongodb.com/) <br>
 [GithubAPI](https://comming.soon)
 
+## Documentation
+### Version Control
+The Version Control is a backround part to make sure that everytime the newest version from this Framework is installed.
+You can't use it right now, later you can use it for your plugins.
+
 
 ## Creators
    ### JohannesLosch#2817
