@@ -14,11 +14,11 @@ labels: 'enhancement'
 ### References
 <!-- If this affects other issues/pull requests/or specific code, reference it:
 #2 - A recent issue or Pull request
-codeoverflow-org/chatoverflow-api#10 - Issue or pr from different repo
-ddc94ecc7481b8fd34b6bb2a88eaf3a53c5ebfdb - A commit
-https://github.com/codeoverflow-org/chatoverflow/blob/e42c17d5524f82c83c7111943d11ee612d40d681/bootstrap/src/main/scala/Bootstrap.scala#L47
-   - A specific line in code
+Issue or pr from different repo
+A commit
+A specific line in code
 -->
+
 
 
 
