@@ -30,7 +30,6 @@ All plugins have to be in the PLUGINS Folder, and each of them has it's own conf
 If you want you can create extra files or let the Framework download extra files (if the website is whitelisted.)
 
 
-
 ## Creators
    ### JohannesLosch#2817
    You can follow him at: <br>
