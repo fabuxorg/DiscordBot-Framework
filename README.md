@@ -6,7 +6,7 @@
 <!---
 BADGES!!!
 --->
-
+[![Build Status](https://travis-ci.org/K-EY/DiscordBot-Framework.svg?branch=master)](https://travis-ci.org/K-EY/DiscordBot-Framework)
 
 </div>
 
