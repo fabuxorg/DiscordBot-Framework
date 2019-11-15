@@ -17,7 +17,7 @@ BADGES!!!
 
 ## Dependencies
 [JDA](https://github.com/DV8FromTheWorld/JDA#download)<br>
-[MongoDB](https://www.mongodb.com/)
+[MongoDB](https://www.mongodb.com/) <br>
 [GithubAPI](https://comming.soon)
 
 
