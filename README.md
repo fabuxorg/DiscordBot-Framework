@@ -7,6 +7,7 @@
 BADGES!!!
 --->
 [![Build Status](https://travis-ci.org/K-EY/DiscordBot-Framework.svg?branch=master)](https://travis-ci.org/K-EY/DiscordBot-Framework)
+[![CodeFactor](https://www.codefactor.io/repository/github/k-ey/discordbot-framework/badge)](https://www.codefactor.io/repository/github/k-ey/discordbot-framework)
 
 </div>
 
