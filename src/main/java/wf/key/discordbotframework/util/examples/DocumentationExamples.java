@@ -1,7 +1,8 @@
-package com.johanneslosch.discordbotframework.util;
+package wf.key.discordbotframework.util.examples;
 
-import com.johanneslosch.discordbotframework.datahandler.filehandler.config.ConfigReader;
-import com.johanneslosch.discordbotframework.datahandler.filehandler.config.ConfigWriter;
+
+import wf.key.discordbotframework.datahandler.filehandler.config.ConfigReader;
+import wf.key.discordbotframework.datahandler.filehandler.config.ConfigWriter;
 
 class DocumentationExamples {
     private void writeProp(){

@@ -1,4 +1,4 @@
-package com.johanneslosch.discordbotframework.plugin;
+package wf.key.discordbotframework.plugin;
 
 import org.jetbrains.annotations.NotNull;
 
