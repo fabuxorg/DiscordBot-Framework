@@ -1,4 +1,4 @@
-package com.johanneslosch.discordbotframework.plugin;
+package wf.key.discordbotframework.plugin;
 
 import java.io.IOException;
 import java.net.URL;
