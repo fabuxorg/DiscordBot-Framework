@@ -6,8 +6,8 @@
 <!---
 BADGES!!!
 --->
-[![Build Status](https://travis-ci.org/K-EY/DiscordBot-Framework.svg?branch=master)](https://travis-ci.org/K-EY/DiscordBot-Framework)
-[![CircleCI](https://circleci.com/gh/K-EY/DiscordBot-Framework.svg?style=svg)](https://circleci.com/gh/K-EY/DiscordBot-Framework)
+[![Build Status](https://travis-ci.org/fabuxorg/DiscordBot-Framework.svg?branch=master)](https://travis-ci.org/fabuxorg/DiscordBot-Framework)
+[![CircleCI](https://circleci.com/gh/fabuxorg/DiscordBot-Framework.svg?style=svg)](https://circleci.com/fabuxorg/K-EY/DiscordBot-Framework)
 [![CodeFactor](https://www.codefactor.io/repository/github/k-ey/discordbot-framework/badge)](https://www.codefactor.io/repository/github/k-ey/discordbot-framework)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/744ca049ce9c4f05a223066a3202de06)](https://www.codacy.com/manual/Losch/DiscordBot-Framework?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=K-EY/DiscordBot-Framework&amp;utm_campaign=Badge_Grade)
 
