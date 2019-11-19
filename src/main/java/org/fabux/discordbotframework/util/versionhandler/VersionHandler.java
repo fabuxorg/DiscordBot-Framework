@@ -12,7 +12,6 @@ import java.net.URL;
 import java.util.Properties;
 
 public class VersionHandler {
-
     /**
      * To get the version from Git(hub) and your Gradle.
      * @param GIT_USER      your Github username
