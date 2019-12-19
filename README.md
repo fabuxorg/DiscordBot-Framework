@@ -82,7 +82,7 @@ You can use it like this in your Java code.
 VersionHandler.version(<YOUR-GIT-NAME>, <YOUR-GIT-REPO>);
 ```
 and if you use gradle you have to paste this in your build.gradle:
-```
+<```>
 task createProperties(dependsOn: processResources) {
     doLast {
         File file = new File(projectDir,"/src/main/resources/version.txt")
