@@ -1,20 +1,20 @@
-package org.fabux.discordbotframework.datahandler.filehandler.config;
+package org.fabux.discordbotframework.datahandler.filehandler;
 
 import org.fabux.discordbotframework.util.logs.Logger;
 
 import java.io.File;
 import java.io.IOException;
 
-class ConfigHelper {
+public class FileHelper {
     /**
      * Checks if File exists
      * @param path      path to file
      * @param filename  filename without ending
      * @return          true if exist
      */
-    static boolean checkFile(String path, String filename) {
+    public static boolean checkFile(String path, String filename, String ending) {
         if(checkDir(path)) {
-            File f = new File(path + "/" + filename + ".prop");
+            File f = new File(path + "/" + filename + "." + ending);
             try {
                 f.createNewFile();
             } catch (IOException e) {

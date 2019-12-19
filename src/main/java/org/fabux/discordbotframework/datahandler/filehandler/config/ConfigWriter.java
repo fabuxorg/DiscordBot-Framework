@@ -1,5 +1,6 @@
 package org.fabux.discordbotframework.datahandler.filehandler.config;
 
+import org.fabux.discordbotframework.datahandler.filehandler.FileHelper;
 import org.fabux.discordbotframework.util.logs.Logger;
 
 import java.io.FileNotFoundException;
@@ -17,7 +18,7 @@ public class ConfigWriter {
      * @param value     value for category
      */
     public static void writePropertiesFile(String path, String filename, String key, String value) {
-        if(ConfigHelper.checkFile(path, filename)){
+        if(FileHelper.checkFile(path, filename, ".prop")){
             /**
              * init Properties and Output stream
              */

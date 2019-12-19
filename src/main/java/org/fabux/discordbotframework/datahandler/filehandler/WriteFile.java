@@ -9,11 +9,16 @@ public class WriteFile {
     Reference https://www.journaldev.com/20891/java-filewriter-example
      */
     public static void writer(String path, String filename, String ending, String content){
-        try(FileWriter fileWriter = new FileWriter(String.format("%s/%s.%s",path, filename, ending),true)) {
-            fileWriter.write(content);
-        } catch (Exception e) {
-            Logger.logger(e.getMessage());
-            e.printStackTrace();
+        if(FileHelper.checkFile(path, filename, ending)){
+            try(FileWriter fileWriter = new FileWriter(String.format("%s/%s.%s",path, filename, ending),true)) {
+                fileWriter.write(content);
+            } catch (Exception e) {
+                Logger.logger(e.getMessage());
+                e.printStackTrace();
+            }
+        }else{
+            Logger.logger("File not found");
         }
+
     }
 }
