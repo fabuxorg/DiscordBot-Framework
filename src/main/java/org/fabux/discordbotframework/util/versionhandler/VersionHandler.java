@@ -12,13 +12,16 @@ import java.net.URL;
 import java.util.Properties;
 
 public class VersionHandler {
-    private static final String GIT_USER = "K-EY";
-    private static final String GIT_REPO = "DiscordBot-Framework";
-    public static void version(){
-        if(getLatestGitReleaseNameTag().equals(getLocalVersion())){
+    /**
+     * To get the version from Git(hub) and your Gradle.
+     * @param GIT_USER      your Github username
+     * @param GIT_REPO      your Github repository name
+     */
+    public static void version(String GIT_USER, String GIT_REPO){
+        if(getLatestGitReleaseNameTag(GIT_USER, GIT_REPO).equals(getLocalVersion())){
             System.out.println("Current version is installed!");
         }else {
-            System.out.println(String.format("You have to update! \n Latest Release with Tag: %s is here: %s", getLatestGitReleaseNameTag(), getLatestReleaseUrl()));
+            System.out.println(String.format("You have to update! \n Latest Release with Tag: %s is here: %s", getLatestGitReleaseNameTag(GIT_USER, GIT_REPO), getLatestReleaseUrl(GIT_USER, GIT_REPO)));
         }
     }
     /*
@@ -28,7 +31,7 @@ public class VersionHandler {
     //TODO: find something better than @NotNull
     @NotNull
     @Deprecated
-    private static String getLatestGitReleaseNameTag()  {
+    private static String getLatestGitReleaseNameTag(String GIT_USER, String GIT_REPO)  {
         GitHub gitHub = null;
         try {
             gitHub = GitHub.connect();
@@ -48,7 +51,7 @@ public class VersionHandler {
     //TODO: find something better than @NotNull
     @NotNull
     @Deprecated
-    private static URL getLatestReleaseUrl(){
+    private static URL getLatestReleaseUrl(String GIT_USER, String GIT_REPO){
         GitHub gitHub = null;
         try {
             gitHub = GitHub.connect();
