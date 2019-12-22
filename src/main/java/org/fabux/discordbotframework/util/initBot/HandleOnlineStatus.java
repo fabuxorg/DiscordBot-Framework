@@ -1,7 +1,7 @@
 package org.fabux.discordbotframework.util.initBot;
 
-import org.fabux.discordbotframework.datahandler.filehandler.config.ConfigReader;
 import net.dv8tion.jda.api.OnlineStatus;
+import org.fabux.discordbotframework.datahandler.filehandler.config.ConfigReader;
 
 class HandleOnlineStatus {
     static OnlineStatus handleStatus(){

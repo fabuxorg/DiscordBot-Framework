@@ -1,8 +1,8 @@
 package org.fabux.discordbotframework.util.versionhandler;
 
+import org.fabux.discordbotframework.util.logs.Logger;
 import org.jetbrains.annotations.NotNull;
 import org.kohsuke.github.GitHub;
-import org.fabux.discordbotframework.util.logs.Logger;
 
 import java.io.File;
 import java.io.FileInputStream;

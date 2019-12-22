@@ -11,7 +11,6 @@ Document person = new Document()
                 .append("books", "BookName");
  */
 
-import org.fabux.discordbotframework.datahandler.filehandler.config.ConfigReader;
 import com.mongodb.BasicDBObject;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
@@ -19,6 +18,7 @@ import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
+import org.fabux.discordbotframework.datahandler.filehandler.config.ConfigReader;
 
 import java.util.Objects;
 

@@ -2,8 +2,6 @@ package org.fabux.discordbotframework.util.time;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Calendar;
-import java.util.Locale;
 
 public class Time {
     public static String getCurrentTime(){
