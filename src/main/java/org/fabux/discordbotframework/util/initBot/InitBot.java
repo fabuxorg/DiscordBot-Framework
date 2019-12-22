@@ -1,10 +1,10 @@
 package org.fabux.discordbotframework.util.initBot;
 
-import org.fabux.discordbotframework.datahandler.filehandler.config.ConfigReader;
-import org.fabux.discordbotframework.util.logs.Logger;
 import net.dv8tion.jda.api.AccountType;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
+import org.fabux.discordbotframework.datahandler.filehandler.config.ConfigReader;
+import org.fabux.discordbotframework.util.logs.Logger;
 
 import javax.security.auth.login.LoginException;
 

@@ -1,5 +1,6 @@
 package org.fabux.discordbotframework.datahandler.filehandler.config;
 
+import org.fabux.discordbotframework.datahandler.filehandler.FileHelper;
 import org.fabux.discordbotframework.util.logs.Logger;
 
 import java.io.File;
@@ -19,7 +20,7 @@ public class ConfigReader {
     public static String read(String path, String filename, String key) {
         Properties prop = new Properties();
         InputStream input = null;
-        if (ConfigHelper.checkFile(path, filename)) {
+        if (FileHelper.checkFile(path, filename, ".prop")) {
             try {
 
                 input = new FileInputStream(new File(path + "/"+ filename + ".prop"));
