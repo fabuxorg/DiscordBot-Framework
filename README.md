@@ -75,8 +75,22 @@ String config = ConfigReader.read("path", "filename", "key-to-safe");
 ````
 
 ### Version Control
-The Version Control is a backround part to make sure that everytime the newest version from this Framework is installed.
-You can't use it right now, later you can use it for your plugins.
+The Version Control is a backround part to make sure that anytime the newest version from this Framework is installed.
+
+You can use it like this in your Java code.
+```
+VersionHandler.version(<YOUR-GIT-NAME>, <YOUR-GIT-REPO>);
+```
+and if you use gradle you have to paste this in your build.gradle:
+```
+task createProperties(dependsOn: processResources) {
+    doLast {
+        File file = new File(projectDir,"/src/main/resources/version.txt")
+        file.text = "version:" + project.version.toString()
+    }
+}
+```
+
 
 ### Folder Structure
 All plugins have to be in the PLUGINS Folder, and each of them has it's own config/settings file (.prob/.xml/.txt/.yaml) in it.
