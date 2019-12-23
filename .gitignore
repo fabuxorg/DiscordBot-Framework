@@ -33,3 +33,5 @@ gradle/wrapper/
 .idea/
 
 data/config.prop
+
+data/firstRun.dat
