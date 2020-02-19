@@ -10,9 +10,9 @@ import java.io.IOException;
 public class Main {
     public static void main (String [] args) throws IOException {
         //Print "test" in log file
-        //Logger.logger("started");
+        Logger.logger("started");
 
-        //Setup.setup();
+        Setup.setup();
 
         //Test version
         //VersionHandler.version("fabuxorg", "DiscordBot-Framework");
