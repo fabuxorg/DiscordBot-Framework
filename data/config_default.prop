@@ -11,3 +11,7 @@ database_host=
 #
 #MongoDB configuration
 mongodb_url=
+#
+#   GUI
+#
+online_gui_port=8080
