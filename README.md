@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://github.com/fabuxorg/DiscordBot-Framework/blob/Logo.png" alt="Logo" width="200" />
+    <img src="https://github.com/fabuxorg/DiscordBot-Framework/blob/master/Logo.png" alt="Logo" width="200" />
     <h1>DiscordBot-Framework</h1>
     <strong>This Framework is an easy way to develop a bot for Discord. </strong><br><br>
 
