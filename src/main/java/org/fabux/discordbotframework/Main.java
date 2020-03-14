@@ -6,6 +6,7 @@ import org.fabux.discordbotframework.util.logs.Logger;
 import org.fabux.discordbotframework.util.setup.Setup;
 
 import java.io.IOException;
+import java.net.http.HttpHeaders;
 
 public class Main {
     public static void main (String [] args) throws IOException {
@@ -16,7 +17,7 @@ public class Main {
 
         //Test version
         //VersionHandler.version("fabuxorg", "DiscordBot-Framework");
-
+        
         //starting webserver for gui
         HTTPServer.start();
 
