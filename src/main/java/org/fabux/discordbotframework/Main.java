@@ -7,6 +7,7 @@ import org.fabux.discordbotframework.util.setup.Setup;
 import org.fabux.discordbotframework.util.versionhandler.VersionHandler;
 
 import java.io.IOException;
+import java.net.http.HttpHeaders;
 
 public class Main {
     public static void main (String [] args) throws IOException {
