@@ -1,7 +1,9 @@
 ---
-name: 'Enhancement'
-about: 'If you have an idea for a new feature or want something to be improved'
-labels: 'enhancement'
+name: Enhancement
+about: If you have an idea for a new feature or want something to be improved
+title: ''
+labels: enhancement
+assignees: ''
 
 ---
 

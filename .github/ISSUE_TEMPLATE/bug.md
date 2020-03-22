@@ -1,7 +1,9 @@
 ---
-name: 'Bug'
-about: 'If something is not working properly'
-labels: 'bug'
+name: Bug
+about: If something is not working properly
+title: "[BUG] "
+labels: bug
+assignees: ''
 
 ---
 
