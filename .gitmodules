@@ -1,0 +1,3 @@
+[submodule "DiscordBot-Framework-GUI"]
+	path = DiscordBot-Framework-GUI
+	url = https://github.com/fabuxorg/DiscordBot-Framework-GUI
