@@ -8,23 +8,36 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Optional;
 
 
 public class WebAccess {
-    private static String _url, _search;
-    private static void access(String URL, String search){
+    private static String _url;
+
+    private static void access(String URL, String search, int attributeLength, Optional<Boolean> addOne){
         _url = URL;
-        _search = search;
+        int one = 0;
+        if(addOne.isPresent()){
+            if(addOne.get()){
+                one = 1;
+            }
+        }
         try {
-            searchStrings(getWebContent(URL), search);
+            searchStrings(getWebContent(URL), search, attributeLength, one);
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
-    public static void main(String[] args){
-        access("https://google.com",  "google");
+
+    /**
+     * Provides access to Content from websites, return as string
+     * @param URL {String}                  website where you which you need content from
+     * @param search {String}               your search quarry
+     * @param attributeLength {Integer}     the length of the attribute you want to get
+     * @param addOne {boolean}              if there is a symbol between search quarry and attribute
+     */
+    public static void get(String URL, String search, int attributeLength, boolean addOne){
+        access(URL, search, attributeLength, Optional.of(addOne));
     }
 
     private static BufferedReader getWebContent(String url) {
@@ -59,21 +72,20 @@ public class WebAccess {
         return reader;
     }
 
-    private static void searchStrings(BufferedReader reader, String search) throws IOException {
+    private static String searchStrings(BufferedReader reader, String search, int attributeLength, int one) throws IOException {
         ArrayList <String> list = new ArrayList<>();
         while (reader.readLine() != null) {
             list.add(reader.readLine());
         }
         if(!list.toString().isEmpty()){
-            System.out.println(list);
             if(list.toString().contains(search)){
-                //TODO: get search content
-                //TODO: give the result to another method
+                return list.get(1).substring(list.get(1).indexOf(search), list.get(1).indexOf(search) + search.length() + attributeLength + one);
             }else{
                 Logger.logger(String.format("%s not found at %s", search, _url));
             }
         }else{
             Logger.logger(String.format("The Downloaded code from %s is empty \n Check the domain!", _url));
         }
+        return null;
     }
 }
