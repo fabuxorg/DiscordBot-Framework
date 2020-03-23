@@ -1,6 +1,6 @@
 # Compiled class file
 *.class
-
+.gradle/*
 # Log file
 *.log
 .
@@ -35,3 +35,7 @@ gradle/wrapper/
 data/config.prop
 
 data/firstRun.dat
+
+*.bin
+
+*.lock
