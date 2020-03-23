@@ -18,7 +18,7 @@ public class Main {
         //Test version
         VersionHandler.version("fabuxorg", "DiscordBot-Framework");
 
-        //starting webserver for gui
+        //starting Webserver for gui
         HTTPServer.start();
 
     }
