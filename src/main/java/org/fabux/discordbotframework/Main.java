@@ -4,6 +4,7 @@ package org.fabux.discordbotframework;
 import org.fabux.discordbotframework.util.gui.webserver.HTTPServer;
 import org.fabux.discordbotframework.util.logs.Logger;
 import org.fabux.discordbotframework.util.setup.Setup;
+import org.fabux.discordbotframework.util.versionhandler.VersionHandler;
 
 import java.io.IOException;
 
@@ -15,7 +16,7 @@ public class Main {
         Setup.setup();
 
         //Test version
-        //VersionHandler.version("fabuxorg", "DiscordBot-Framework");
+        VersionHandler.version("fabuxorg", "DiscordBot-Framework");
 
         //starting webserver for gui
         HTTPServer.start();
