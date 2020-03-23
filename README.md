@@ -95,7 +95,24 @@ task createProperties(dependsOn: processResources) {
 All plugins have to be in the PLUGINS Folder, and each of them has it's own config/settings file (.prob/.xml/.txt/.yaml) in it.
 If you want you can create extra files or let the Framework download extra files (if the website is whitelisted.)
 
-###
+### WebAccess
+this feature provides the user access to content from websites like:
+* strings
+* Integer
+* Boolean
+* other
+
+### How to use it
+
+     @param URL {String}                  website where you which you need content from
+     @param search {String}               your search quarry
+     @param attributeLength {Integer}     the length of the attribute you want to get
+     @param addOne {boolean}              if there is a symbol between search quarry and attribute
+     retun: String with attribute
+    
+```
+WebAccess.get(<URL>, <search>, <attributeLength>, <addOne>);
+```
 
 ## Creators
    ### JohannesLosch#2817
