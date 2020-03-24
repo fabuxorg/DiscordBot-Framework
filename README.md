@@ -101,6 +101,9 @@ this feature provides the user access to content from websites like:
 * Boolean
 * other
 
+### GUI
+for a custom gui port change the `online_gui_port` attribute to your custom port
+
 ### How to use it
 
      @param URL {String}                  website where you which you need content from
