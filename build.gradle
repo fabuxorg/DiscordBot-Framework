@@ -16,7 +16,7 @@ repositories {
 }
 
 dependencies {
-    compile 'net.dv8tion:JDA:4.1.1_123'
+    compile 'net.dv8tion:JDA:4.1.1_124'
     compile group: 'org.mongodb', name: 'mongodb-driver', version: '3.12.2'
     // https://mvnrepository.com/artifact/org.kohsuke/github-api
     compile group: 'org.kohsuke', name: 'github-api', version: '1.108'
