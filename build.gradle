@@ -21,7 +21,7 @@ dependencies {
     compile 'net.dv8tion:JDA:4.1.1_137'
 
     // https://mvnrepository.com/artifact/org.kohsuke/github-api
-    compile group: 'org.kohsuke', name: 'github-api', version: '1.110'
+    compile group: 'org.kohsuke', name: 'github-api', version: '1.111'
 
 }
 test {
