@@ -3,8 +3,8 @@ plugins {
     id 'application'
 }
 
-group 'com.johanneslosch'
-version '0.1'
+group 'org.fabuxorg'
+version '0.2'
 
 sourceCompatibility = 11
 

@@ -15,7 +15,7 @@ public class Main {
 
         Setup.setup();
 
-        //VersionHandler.version("fabuxorg", "DiscordBot-Framework");
+        VersionHandler.version("fabuxorg", "DiscordBot-Framework");
 
         //starting Web server for gui
         HTTPServer.start();
