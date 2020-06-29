@@ -1,0 +1,15 @@
+org.fabux.discordbotframework
+org.fabux.discordbotframework.command
+org.fabux.discordbotframework.datahandler.database.mongodb
+org.fabux.discordbotframework.datahandler.database.sql
+org.fabux.discordbotframework.datahandler.filehandler
+org.fabux.discordbotframework.datahandler.filehandler.config
+org.fabux.discordbotframework.plugin
+org.fabux.discordbotframework.util
+org.fabux.discordbotframework.util.gui.webserver
+org.fabux.discordbotframework.util.initBot
+org.fabux.discordbotframework.util.logs
+org.fabux.discordbotframework.util.setup
+org.fabux.discordbotframework.util.time
+org.fabux.discordbotframework.util.versionhandler
+org.fabux.discordbotframework.util.web
